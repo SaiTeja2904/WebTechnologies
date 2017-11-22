@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My fifth Java Script</title>
+	<script type="text/javascript">
+		function sum_values(argument) {
+			var vi=document.getElementById("su");
+			var sum=0;
+			for (var i = 0; i < argument.length; i++) {
+				//document.write(argument[i]);
+				sum=sum+argument[i];
+			}
+
+			vi.innerHTML=vi.innerHTML+" "+sum;
+			
+		}
+
+		function multiply_values(argument) {
+			// body...
+			var vi=document.getElementById("mul");
+			var prod=1;
+			for (var i = 0; i < argument.length; i++) {
+				//document.write(argument[i]);
+				prod=prod*argument[i];
+			}
+
+			vi.innerHTML=vi.innerHTML+" "+prod;
+		}
+	</script>
+</head>
+<body>
+<input type="button" name="click" onclick="sum_values([1,2,3,4])" value="Sum">
+<input type="button" name="click" onclick="multiply_values([1,2,3,4])" value="Multiply">
+<p id="su">Sum is :  </p>
+<br>
+<p id="mul">Product is :  </p>
+</body>
+</html>

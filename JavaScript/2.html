@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My second Java Script</title>
+	<script type="text/javascript">
+		function maxOfThree(arg1,arg2,arg3) {
+			var vi=document.getElementById("op");
+			
+				if(arg1 > arg2)
+				{//vi.innerHTML=vi.innerHTML+" "+arg1;
+					if(arg1 > arg3)
+						{vi.innerHTML=vi.innerHTML+" "+arg1;}
+					else
+						{vi.innerHTML=vi.innerHTML+" "+arg3;}
+				}
+				else if(arg2 > arg3)
+				{
+					vi.innerHTML=vi.innerHTML+" "+arg2;
+				}
+				else
+				{
+					vi.innerHTML=vi.innerHTML+" "+arg3;	
+				}
+
+		}
+	</script>
+</head>
+<body>
+<input type="button" name="click" onclick="maxOfThree(100,40,300)" value="click">
+<p id="op">Max value is:</p>
+</body>
+</html>

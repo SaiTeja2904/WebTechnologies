@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My third Java Script</title>
+	<script type="text/javascript">
+		function check() {
+			var arg=document.getElementById("charc").value;
+			var vi=document.getElementById("op");
+			
+				if(arg == 'a' || arg == 'e' || arg == 'i' || arg == 'o' || arg == 'u' )
+				{
+					vi.innerHTML=" true";
+				}
+				else
+				{
+					vi.innerHTML=vi.innerHTML+" false";
+				}
+		}
+	</script>
+</head>
+<body>
+<input type="text" id="charc">
+<input type="button" name="click" onclick="check()" value="click">
+<p id="op">Is vowel..?:</p>
+</body>
+</html>

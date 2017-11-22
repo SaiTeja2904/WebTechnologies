@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My eigth Java Script</title>
+	<script type="text/javascript">
+		function findLongestWord(arg) {
+			var vi=document.getElementById("op");
+			vi.innerHTML=vi.innerHTML+ " \" " +arg+" \" is";
+
+			var data=arg.split(" ");
+			//document.write(data.length);
+			var max=-999;
+			var ind=-1;
+
+			for(var i=0;i<data.length;i++)
+			{
+				if(max<data[i].length)
+				{
+					max=data[i].length;
+					ind=i;
+				}
+			}
+
+			vi.innerHTML=vi.innerHTML+" "+data[ind];
+				
+		}
+	</script>
+</head>
+<body>
+<input type="button" name="click" onclick="findLongestWord('kishore is a good boy in the world')" value="click">
+<p id="op">Longest word in  </p>
+</body>
+</html>

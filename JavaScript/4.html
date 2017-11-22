@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My fourth Java Script</title>
+	<script type="text/javascript">
+		function trans(arg) {
+			var vi=document.getElementById("op");
+			vi.innerHTML=vi.innerHTML+ " version of \" " +arg+" \" is:";
+			//vi.innerHTML=vi.innerHTML+" "+arg;
+			var len=arg.length;
+			//window.prompt(len);
+			var out="";
+			for (var i = 0; i < len; i++) {
+				var char=arg.charAt(i);
+				if(char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u' || char==" " )
+				{
+					out=out+char;
+				}
+				else
+				{
+					out=out+char+'o'+char;					
+				}
+			}
+			vi.innerHTML=vi.innerHTML+" "+out;
+		}
+	</script>
+</head>
+<body>
+<input type="button" name="click" onclick="trans('this is fun')" value="click">
+<p id="op">Translated  </p>
+</body>
+</html>

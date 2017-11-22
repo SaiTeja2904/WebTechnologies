@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My first Java Script</title>
+	<script type="text/javascript">
+		function maxVal() {
+			var num1=document.getElementById("numberOne");
+			var num2=document.getElementById("numberTwo");
+			var vi=document.getElementById("op");
+			
+			if(parseInt(num1.value) > parseInt(num2.value))
+				{vi.innerHTML=vi.innerHTML+" "+num1.value;}
+			else
+				{vi.innerHTML=vi.innerHTML+" "+num2.value;}
+
+		}
+	</script>
+</head>
+<body>
+<input type="text" id="numberOne">
+<input type="text" id="numberTwo">
+<input type="button" name="click" onclick="maxVal()" value="click">
+<p id="op">Max value is:</p>
+</body>
+</html>

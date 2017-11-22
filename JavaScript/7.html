@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My seventh Java Script</title>
+	<script type="text/javascript">
+		function english(arg) {
+			var vi=document.getElementById("op");
+			
+			var fashion ={
+				"merry":"god", 
+				"christmas":"jul", 
+				"and":"och",
+				"happy":"gott", 
+				"new":"nytt",
+				"year":"år"};
+			
+			var data=arg.split(" ");
+			var out="";
+			for(var i=0;i<data.length;i++)
+			{
+				out=out+fashion[data[i]]+" ";
+			}
+			//document.write(data.length);
+			vi.innerHTML= vi.innerHTML+" "+ out;
+			
+		}
+	</script>
+</head>
+<body>
+<input type="button" name="click" onclick="english('merry christmas and happy new year')" value="click">
+<p id="op">English to swedish :  </p>
+</body>
+</html>
